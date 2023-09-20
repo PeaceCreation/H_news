@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My News</title>
+    <!-- Swiper -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+      />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="./assets/css/all.min.css">
+    <!-- bootstrap -->
+    <!-- <link rel="stylesheet" href="./assets/css/bootstrap.min.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- main style -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+    <header>
+    <!--  Start Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+        <div class="container">
+          <a class="navbar-brand" href="./index.html">News</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Technologies</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Economies</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sports</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Hasoub</a>
+              </li>
+            </ul> 
+            <div class="login-button ">
+              <a href="login.html" class="button"> Inscription</a>
+            </div>
+            <div class="login">
+                <i class="fas fa-user"></i>
+                <div class="login-container">
+                    <a href="./login.html" class="button"> Log In</a>
+                </div>
+            </div>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search"  aria-label="Search">
+                <a href="./search.html" class="serach-icon"> <i class="fas fa-search"></i> </a>
+              </form>
+          </div>
+        </div>
+    </nav>
+    <!--  End Navbar -->
+    <!-- Start Carousel -->
+    <div class="header-news">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="carousel-news">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">1</button>
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2">2</button>
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3">3</button>
+                            </div>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <a href="./article.html">
+                                    <img src="./images/picture-1.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-text">
+                                        <h3> Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                                    </div>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                  <div class="header-articles">
+                    <a href="./article.html" class="article-link">
+                      <div class="row">
+                        <div class="col-5">
+                            <img src="./images/picture-11.jpg" class="w-100" alt="imag">
+                        </div>
+                        <div class="col-7">
+                            <div class="article-text">
+                               <span class="article-category">
+                                News
+                               </span>
+                               <h5 class="article-title ">Lorem ipsum dolor sit amet consectetur  </h5>
+                            </div>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="./article.html" class="article-link">
+                      <div class="row">
+                        <div class="col-5">
+                            <img src="./images/picture-15.jpg" class="w-100" alt="imag">
+                        </div>
+                        <div class="col-7">
+                            <div class="article-text">
+                               <span class="article-category">
+                                News
+                               </span>
+                               <h5 class="article-title ">Lorem ipsum dolor sit amet consectetur  </h5>
+                            </div>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="./article.html" class="article-link">
+                      <div class="row">
+                        <div class="col-5">
+                            <img src="./images/picture-16.jpg" class="w-100" alt="imag">
+                        </div>
+                        <div class="col-7">
+                            <div class="article-text">
+                               <span class="article-category">
+                                News
+                               </span>
+                               <h5 class="article-title ">Lorem ipsum dolor sit amet consectetur  </h5>
+                            </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Carousel -->
+    </header>
+    <main>
+      <section class="news">
+        <div class="container">
+          <h2 class="section-title">
+            News 
+          </h2>
+            <div class="row">
+              <div class="col-lg-3 col-md-3 col-sm-6 mt-4">
+                <a href="./article.html" class="article-link">
+                  <img src="./images/picture-17.jpg" alt="image">
+                  <div class="article-text my-2">
+                    <span class="article-category"> Economy</span>
+                    <h5 class="article-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                  </div>
+                </a>
+                
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-6 mt-4">
+                <a href="./article.html" class="article-link">
+                  <img src="./images/picture-15.jpg" alt="image">
+                  <div class="article-text my-2">
+                    <span class="article-category"> Sports</span>
+                    <h5 class="article-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                  </div>
+                </a>
+                
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-6 mt-4">
+                <a href="./article.html" class="article-link">
+                  <img src="./images/picture-10.jpg" alt="image">
+                  <div class="article-text my-2">
+                    <span class="article-category"> Economy</span>
+                    <h5 class="article-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                  </div>
+                </a>
+                
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-6 mt-4">
+                <a href="./article.html" class="article-link">
+                  <img src="./images/picture-7.jpg" alt="image">
+                  <div class="article-text my-2">
+                    <span class="article-category"> Economy</span>
+                    <h5 class="article-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                  </div>
+                </a>
+                
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-6 mt-4">
+                <a href="./article.html" class="article-link">
+                  <img src="./images/picture-12.jpg" alt="image">
+                  <div class="article-text my-2">
+                    <span class="article-category"> Economy</span>
+                    <h5 class="article-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                  </div>
+                </a>
+                
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-6 mt-4">
+                <a href="./article.html" class="article-link">
+                  <img src="./images/picture-13.jpg" alt="image">
+                  <div class="article-text my-2">
+                    <span class="article-category"> Economy</span>
+                    <h5 class="article-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                  </div>
+                </a>
+                
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-6 mt-4">
+                <a href="./article.html" class="article-link">
+                  <img src="./images/picture-14.jpg" alt="image">
+                  <div class="article-text my-2">
+                    <span class="article-category"> Economy</span>
+                    <h5 class="article-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                  </div>
+                </a>
+                
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-6 mt-4">
+                <a href="./article.html" class="article-link">
+                  <img src="./images/picture-6.jpg" alt="image">
+                  <div class="article-text my-2">
+                    <span class="article-category"> Economy</span>
+                    <h5 class="article-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                  </div>
+                </a>
+                
+              </div>
+            </div>
+            <div class="text-center mt-5">
+              <a href="#" class="btn btn button"> More ...</a>
+            </div>
+        </div>
+      </section>
+      <section class="most-read">
+        <div class="container">
+          <h2 class="section-title"> Most Read Article</h2>
+          <div class="card-news">
+            <a href="./article.html">
+              <div class="row">
+                <div class="col-md-5">
+                  <img src="./images/picture-5.jpg" alt="img">
+                </div>
+                <div class="col-md-7">
+                  <div class="card-text">
+                    <h4> Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt neque consectetur beatae repellendus 
+                      omnis, voluptatem quasi aliquam tenetur mollitia nemo excepturi ratione qui nostrum 
+                      similique iure cumque eveniet doloribus perspiciatis.
+                    </p>
+                    <time datetime="2023-9-18"></time>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="card-news">
+            <div class="card-img">
+             <img src="./images/picture-3.jpg" alt="image"> 
+            </div>
+            <div class="card-text">
+              <h4 class="py-3"> Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+              <time datetime="2023-9-19"></time>
+            </div>
+          </div>
+          <div class="card-news">
+            <a href="./article.html">
+              <div class="row">
+                <div class="col-md-5">
+                  <img src="./images/picture-2.jpg" alt="img">
+                </div>
+                <div class="col-md-7">
+                  <div class="card-text">
+                    <h4> Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt neque consectetur beatae repellendus 
+                      omnis, voluptatem quasi aliquam tenetur mollitia nemo excepturi ratione qui nostrum 
+                      similique iure cumque eveniet doloribus perspiciatis.
+                    </p>
+                    <time datetime="2023-9-18"></time>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="opinins">
+        <div class="conatiner">
+          <h2 class="section-title"> Opinions Article </h2>
+          <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-6">
+              <a href="./article.html">
+                <div class="opinions-card">
+                  <h5 class="article-title ">Lorem ipsum dolor sit amet  consectetur  </h5>
+                  <div class="user-info">
+                    <img src="./images/user_img/user_1.jpg" alt="image">
+                    <span> Mohamed </span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+              <a href="./article.html">
+                <div class="opinions-card">
+                  <h5 class="article-title ">Lorem ipsum dolor sit amet  consectetur  </h5>
+                  <div class="user-info">
+                    <img src="./images/user_img/user_2.jpg" alt="image">
+                    <span>   Mohamoud</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+              <a href="./article.html">
+                <div class="opinions-card">
+                  <h5 class="article-title ">Lorem ipsum dolor sit amet  consectetur  </h5>
+                  <div class="user-info">
+                    <img src="./images/user_img/user_3.jpg" alt="image">
+                    <span> Ahmed </span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+              <a href="./article.html">
+                <div class="opinions-card">
+                  <h5 class="article-title ">Lorem ipsum dolor sit amet  consectetur  </h5>
+                  <div class="user-info">
+                    <img src="./images/user_img/user_4.jpg" alt="image">
+                    <span> Siwar </span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+              <a href="./article.html">
+                <div class="opinions-card">
+                  <h5 class="article-title ">Lorem ipsum dolor sit amet  consectetur  </h5>
+                  <div class="user-info">
+                    <img src="./images/user_img/user_5.jpg" alt="image">
+                    <span> Dahoud </span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+              <a href="./article.html">
+                <div class="opinions-card">
+                  <h5 class="article-title ">Lorem ipsum dolor sit amet  consectetur  </h5>
+                  <div class="user-info">
+                    <img src="./images/user_img/user_6.jpg" alt="image">
+                    <span>  Khalid </span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+              <a href="./article.html">
+                <div class="opinions-card">
+                  <h5 class="article-title ">Lorem ipsum dolor sit amet  consectetur  </h5>
+                  <div class="user-info">
+                    <img src="./images/user_img/user_7.jpg" alt="image">
+                    <span> Sidi </span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+              <a href="./article.html">
+                <div class="opinions-card">
+                  <h5 class="article-title ">Lorem ipsum dolor sit amet  consectetur  </h5>
+                  <div class="user-info">
+                    <img src="./images/user_img/user_7.jpg" alt="image">
+                    <span> Ahmed Ali </span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="videos">
+        <div class="container">
+          <h2 class="section-title text-light"> Videos</h2>
+          <div class="swiper myswiper py-5">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="article.html" class="article-link">
+                    <div class="slider-img">
+                      <img src="./images/picture-12.jpg" alt="image">
+                    </div>
+                  <div class="slide-text">
+                    <h5 class="article-title ">Lorem ipsum dolor sit amet  consectetur</h5>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="article.html" class="article-link">
+               <div class="slide-img">
+                <i class="fas fa-play"></i>
+                <img src="./images/picture-13.jpg" alt="image">
+               </div>
+                  <div class="slide-text">
+                    <h5 class="article-title ">Lorem ipsum dolor sit amet  consectetur</h5>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="article.html" class="article-link">
+                  <div class="slide-img">
+                    <i class="fas fa-play"></i>
+                    <img src="./images/picture-6.jpg" alt="image">
+                  </div>
+                  <div class="slide-text">
+                    <h5 class="article-title ">Lorem ipsum dolor sit amet  consectetur</h5>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="article.html" class="article-link">
+                  <div class="slide-img">
+                    <i class="fas fa-play"></i>
+                    <img src="./images/picture-10.jpg" alt="image">
+                  </div>
+                  <div class="slide-text">
+                    <h5 class="article-title ">Lorem ipsum dolor sit amet  consectetur</h5>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="article.html" class="article-link">
+                  <div class="slide-img">
+                    <i class="fas fa-play"></i>
+                    <img src="./images/picture-17.jpg" alt="image">
+                  </div>
+                  <div class="slide-text">
+                    <h5 class="article-title ">Lorem ipsum dolor sit amet  consectetur</h5>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="article.html" class="article-link">
+                  <div class="slide-img">
+                    <i class="fas fa-play"></i>
+                    <img src="./images/picture-16.jpg" alt="image">
+                  </div>
+                  <div class="slide-text">
+                    <h5 class="article-title ">Lorem ipsum dolor sit amet  consectetur</h5>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="article.html" class="article-link">
+                  <div class="slide-img">
+                    <i class="fas fa-play"></i>
+                    <img src="./images/picture-15.jpg" alt="image">
+                  </div>
+                  <div class="slide-text">
+                    <h5 class="article-title ">Lorem ipsum dolor sit amet  consectetur</h5>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-pagination">
+            </div>
+          </div>
+ 
+        </div>
+      </section>
+      <section class="latest-news">
+        <div class="container">
+          <h2 class="section-title"> Latest News </h2>
+          <div class="row">
+            <div class="col-md-6">
+              <a href="article.html" class="article-link">
+                <img src="./images/picture-11.jpg" alt="image">
+                <div class="card-text mt-2">
+                  <span class="article-category">Sports </span>
+                  <h5 class="article-title">Lorem ipsum dolor sit amet consectetur  </h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum voluptates doloribus maiores laudantium quaerat 
+                      inventore corporis error, praesentium modi voluptate vero eligendi mollitia.
+                    </p>
+                </div>
+              </a>
+            </div>
+          <div class="col-md-6">
+              <a href="article.html" class="article-link">
+                <div class="row">
+                  <div class="col-sm-6">  
+                    <img src="./images/picture-13.jpg" alt="image">
+                  </div>
+                    <div class="col-sm-6">
+                      <div class="cart-text">
+                        <span class="article-category"> Technologies </span>
+                        <h5 class="article-title">Lorem ipsum dolor sit amet consectetur  </h5>
+                      </div>
+                    </div>
+                </div>
+              </a>
+              <div class="row mt-4">
+                  <div class="col-sm-6">
+                    <a href="article.html" class="article-link">
+                      <img src="./images/picture-10.jpg" alt="">
+                      <div class="card-text mt-3">
+                        <span class="article-category"> Hasoub</span>
+                        <h5 class="article-title">Lorem ipsum dolor sit amet consectetur  </h5>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-sm-6">
+                    <a href="article.html" class="article-link">
+                      <img src="./images/picture-16.jpg" alt="">
+                      <div class="card-text mt-3">
+                        <span class="article-category"> Hasoub</span>
+                        <h5 class="article-title">Lorem ipsum dolor sit amet consectetur  </h5>
+                      </div>
+                    </a>
+                  </div>
+              </div>
+
+            </div> 
+          </div>
+          <div class="text-center mt-4">
+            <a href="#" class="btn button"> More ...</a>
+          </div>
+          <hr class="mt-4">
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="row">
+
+            <div class="col-md-3 col-sm-6">
+                <h4 class="footer-title"> About Us</h4>
+                <ul class="list-unstyled">
+                  <li class="mt-3"><a href="#"> About Us</a></li>
+                  <li class="mt-3"><a href="#"> Priverciy</a></li>
+                  <li class="mt-3"><a href="#"> Condition And Trems</a></li>
+                  <li class="mt-3"><a href="#">About Platform </a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <h4 class="footer-title"> Contact us</h4>
+              <ul class="list-unstyled">
+                <li class="mt-3"><a href="#"> About Us</a></li>
+                <li class="mt-3"><a href="#"> Priverciy</a></li>
+                <li class="mt-3"><a href="#"> Condition And Trems</a></li>
+                <li class="mt-3"><a href="#">About Platform </a></li>
+              </ul>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <h4 class="footer-title"> Social Media</h4>
+            <ul class="list-unstyled">
+              <li class="mt-3"> <i class="fas fa-location-arrow"></i> Makaa</li>
+              <li class="mt-3"> <i class="fas fa-phone"></i> 03348757456</li>
+              <li class="mt-3"> <i class="fas fa-envelope"></i> example@gamil.com</li>
+            </ul>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="footer-title"> Follow Us</div>
+          <ul class="social-media">
+              <li class="social-media-icon d-flex justify-content-between align-items-center">
+                <a href="#"> <img src="./images/social_media/Facebook.png" alt="image"></a>
+                <a href="#"> <img src="./images/social_media/Twitter.png" alt="image"></a>
+                <a href="#"> <img src="./images/social_media/Instagram.png" alt="image"></a>
+                <a href="#"> <img src="./images/social_media/YouTube.png" alt="image"></a>
+              </li>
+          </ul>
+          <div class="text-center mt-3">
+            <a href="index.html" class="footer-brand"> My News</a>
+          </div>
+          <div class="copyright text-center mt-3">
+            Allright Reserved &copy; <span id="year"></span>
+          </div>
+      </div>
+      
+      </div>
+
+      </div>
+    </footer>
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="./assets/js/swiper.js"></script>
+<script src="assets/js/main.js"></script> 
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>
+
+<!-- <h5 class="article-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5> -->
